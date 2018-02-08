@@ -1,0 +1,24 @@
+apply plugin: 'maven'
+group 'ofo.native'
+version '1.0.0'
+def MAVEN_URL = 'http://118.190.46.50:8081/repository/maven-android-release/'
+def MAVEN_USERNAME = 'android'
+def MAVEN_PASSWORD = 'android@#$123'
+
+allprojects {   //这个配置看情况是否需要
+    repositories {
+        jcenter()
+        maven { url MAVEN_URL }
+    }
+}
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            pom.artifactId = 'pandora'
+            repository(url: MAVEN_URL) {
+                authentication(userName: MAVEN_USERNAME, password: MAVEN_PASSWORD)
+            }
+        }
+    }
+}
