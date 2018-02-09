@@ -18,8 +18,7 @@ public class DefaultActivity extends BaseActivity {
 
   protected Toolbar addAppbar() {
     setContentView(R.layout.appbar);
-    toolbar = (Toolbar) findViewById(R.id.toolbar);
-    setSupportActionBar(toolbar);
+    toolbar = findViewById(R.id.toolbar);
     if (getSupportActionBar() != null) {
       getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }

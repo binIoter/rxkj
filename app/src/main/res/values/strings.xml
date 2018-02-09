@@ -1,4 +1,7 @@
 <resources>
   <string name="app_name">百词斩</string>
   <string name="jump">跳过</string>
+
+  <!-- TODO: Remove or change this placeholder text -->
+  <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

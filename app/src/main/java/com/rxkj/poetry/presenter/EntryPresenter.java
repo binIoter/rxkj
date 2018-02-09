@@ -1,6 +1,7 @@
 package com.rxkj.poetry.presenter;
 
 import android.os.CountDownTimer;
+import com.rxkj.poetry.BuildConfig;
 import com.rxkj.poetry.contract.EntryContract;
 
 /**
@@ -10,7 +11,7 @@ import com.rxkj.poetry.contract.EntryContract;
 public class EntryPresenter implements EntryContract.Presenter {
   private EntryContract.View mView;
   private CountDownTimer mSplashTimer;
-  private int AD_SHOW_TIME = 3000;
+  private int AD_SHOW_TIME = BuildConfig.DEBUG ? 0 : 3000;
 
   public EntryPresenter(EntryContract.View view) {
     mView = view;

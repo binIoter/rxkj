@@ -1,3 +1,8 @@
 <resources>
-
+  <!-- Base application theme. -->
+  <style name="AppTheme" parent="AppThemeBase">
+    <item name="colorPrimary">@color/colorApp</item>
+    <item name="colorAccent">@color/colorApp</item>
+    <item name="colorControlNormal">@color/colorApp</item>
+  </style>
 </resources>

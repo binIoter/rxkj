@@ -14,7 +14,7 @@
       android:layout_height="match_parent"
       android:scaleType="centerCrop"
       />
-  <com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton
+  <TextView
       android:layout_width="80dp"
       android:layout_height="30dp"
       android:layout_alignParentRight="true"
@@ -22,8 +22,7 @@
       android:layout_marginRight="10dp"
       android:layout_marginTop="10dp"
       android:gravity="center"
-      android:id="@+id/rb_jump"
+      android:id="@+id/tv_jump"
       android:text="@string/jump"
-      app:qmui_radius="1dp"
       />
 </RelativeLayout>

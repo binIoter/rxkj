@@ -3,10 +3,10 @@ package com.rxkj.poetry.activity;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.widget.ImageView;
+import android.widget.TextView;
 import com.ofo.route.OfoRouter;
 import com.ofo.route.OnRouteCallback;
 import com.ofo.route.PageContainer;
-import com.qmuiteam.qmui.widget.roundwidget.QMUIRoundButton;
 import com.rxkj.libcore.AppRouterTable;
 import com.rxkj.libcore.base.BaseActivity;
 import com.rxkj.poetry.R;
@@ -16,7 +16,7 @@ import com.rxkj.poetry.presenter.EntryPresenter;
 public class EntryActivity extends BaseActivity implements EntryContract.View {
   private EntryContract.Presenter mPresenter;
   private ImageView mIvAd;
-  private QMUIRoundButton mRbJump;
+  private TextView mTvJump;
 
   @Override protected void onCreate(@Nullable Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
@@ -28,7 +28,7 @@ public class EntryActivity extends BaseActivity implements EntryContract.View {
 
   private void initView() {
     mIvAd = findViewById(R.id.iv_ad);
-    mRbJump = findViewById(R.id.rb_jump);
+    mTvJump = findViewById(R.id.tv_jump);
   }
 
   @Override public void setPresenter(EntryContract.Presenter presenter) {
@@ -40,7 +40,7 @@ public class EntryActivity extends BaseActivity implements EntryContract.View {
   }
 
   @Override public void updateCountDown(int count) {
-    mRbJump.setText(String.valueOf(count));
+    mTvJump.setText(String.valueOf(count));
   }
 
   @Override public void jumpToHome() {
