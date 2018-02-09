@@ -1,6 +1,5 @@
 package com.rxkj.poetry.activity;
 
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.IdRes;
 import com.alibaba.android.arouter.facade.annotation.Route;
@@ -13,8 +12,7 @@ import com.rxkj.poetry.fragment.FindFragment;
 import com.rxkj.poetry.fragment.HomeFragment;
 import com.rxkj.poetry.fragment.MyFragment;
 
-@Route(path = AppRouterTable.PATH_MAIN_ACTIVITY) public class HomeActivity extends BaseActivity
-   {
+@Route(path = AppRouterTable.PATH_MAIN_ACTIVITY) public class HomeActivity extends BaseActivity {
   private BottomBar mBottomBar;
 
   @Override protected void onCreate(Bundle savedInstanceState) {
@@ -44,5 +42,6 @@ import com.rxkj.poetry.fragment.MyFragment;
       }
     });
   }
+
 
 }
